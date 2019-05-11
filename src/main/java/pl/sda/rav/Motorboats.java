@@ -20,19 +20,12 @@ public class Motorboats extends Vehicles {
         this.maxDistance = maxDistance;
     }
 
-    public Motorboats(String brand, int displacement, int maxDistance) {
-        super(brand);
+
+
+    public Motorboats(int vin, String name, int yearOfProduction, int displacement, int maxDistance, String brand) {
+        super(vin, name, yearOfProduction, brand );
         this.displacement = displacement;
         this.maxDistance = maxDistance;
     }
 
-    public Motorboats(int vin, String name, int yearOfProduction, int displacement, int maxDistance) {
-        super(vin, name, yearOfProduction, );
-        this.displacement = displacement;
-        this.maxDistance = maxDistance;
-    }
-
-    public Motorboats(int vin, String name, int yearOfProduction) {
-        super(vin, name, yearOfProduction);
-    }
 }
