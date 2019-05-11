@@ -4,11 +4,11 @@ import java.time.LocalDate;
 
 public class Period {
     private LocalDate startDate;
-    private LocalDate ebdDate;
+    private LocalDate endDate;
 
-    public Period(LocalDate startDate, LocalDate ebdDate) {
+    public Period(LocalDate startDate, LocalDate endDate) {
         this.startDate = startDate;
-        this.ebdDate = ebdDate;
+        this.endDate = endDate;
     }
 
     public LocalDate getStartDate() {
@@ -19,11 +19,16 @@ public class Period {
         this.startDate = startDate;
     }
 
-    public LocalDate getEbdDate() {
-        return ebdDate;
+    public LocalDate getEndDate() {
+        return endDate;
     }
 
-    public void setEbdDate(LocalDate ebdDate) {
-        this.ebdDate = ebdDate;
+    public void setEndDate(LocalDate endDate) {
+        this.endDate = endDate;
+    }
+    public boolean isImposes(Period newPeriod){
+        if(this.startDate.isBefore(newPeriod.startDate) && this.endDate.isAfter(newPeriod.startDate)) return true;
+        if(this.startDate.isBefore(newPeriod.endDate) && this.endDate.isAfter(newPeriod.endDate)) return true;
+        return false;
     }
 }
