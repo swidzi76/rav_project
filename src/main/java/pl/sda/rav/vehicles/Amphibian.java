@@ -39,7 +39,7 @@ public class Amphibian extends Vehicles {
     }
 
 
-    public Amphibian(int vin, String name, int i, int yearOfProduction, String brand) {
+    public Amphibian(int vin, String name, int yearOfProduction, String brand) {
         super(vin, name, yearOfProduction, brand);
     }
 }

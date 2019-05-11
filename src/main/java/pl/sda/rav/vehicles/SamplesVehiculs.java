@@ -14,7 +14,7 @@ public class SamplesVehiculs {
     public static Motorboats MotorboatsThree = new Motorboats(8,"Car",2019,750, "Sportis S.A.");
     public static Motorboats MotorboatsFour = new Motorboats(9,"Smak",2019,150, "Baltic Yacht Service");
     public static Motorboats MotorboatsFive = new Motorboats(10,"Kebab",2019,900, "Baltic Yacht Service");
-    public static Amphibian amphibianOne = new Amphibian(11,"Amphibian",2015,2017,"jakis");
-    public static Amphibian amphibianTwo = new Amphibian(12,"AmphibianSuper",2015,2019,"jakis");
-    public static Amphibian amphibianThree = new Amphibian(13,"AmphibianSlaby",2015,2000,"jakis");
+    public static Amphibian amphibianOne = new Amphibian(11,"Amphibian",2017,"jakis");
+    public static Amphibian amphibianTwo = new Amphibian(12,"AmphibianSuper",2019,"jakis");
+    public static Amphibian amphibianThree = new Amphibian(13,"AmphibianSlaby",2000,"jakis");
 }
