@@ -44,4 +44,28 @@ class PeriodTest {
         //then
         Assertions.assertTrue(result);
     }
+    @Test
+    void shouldNotImposes() {
+        //given
+        Period period1 = new Period(LocalDate.of(2019,01,20), LocalDate.of(2019, 02,10));
+        Period period2 = new Period(LocalDate.of(2019,03,26), LocalDate.of(2019, 04,8));
+
+        //when
+
+        boolean result = period1.isImposes(period2);
+        //then
+        Assertions.assertFalse(result);
+    }
+    @Test
+    void shouldSamePeriod() {
+        //given
+        Period period1 = new Period(LocalDate.of(2019,01,20), LocalDate.of(2019, 02,10));
+        Period period2 = new Period(LocalDate.of(2019,01,20), LocalDate.of(2019, 02,10));
+
+        //when
+
+        boolean result = period1.isImposes(period2);
+        //then
+        Assertions.assertTrue(result);
+    }
 }

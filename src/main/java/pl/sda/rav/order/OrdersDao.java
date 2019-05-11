@@ -11,7 +11,13 @@ public class OrdersDao {
         orders = new ArrayList<>();
     }
     public void add(Order order){
-        orders.add(order);
+        if(isAvailable(order.getVehicle(), order.getPeriod())){
+            orders.add(order);
+        }
+    }
+
+    public int size(){
+        return orders.size();
     }
 
     public boolean isAvailable(Vehicles vehicle, Period period){

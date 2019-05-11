@@ -27,8 +27,10 @@ public class Period {
         this.endDate = endDate;
     }
     public boolean isImposes(Period newPeriod){
-        if(this.startDate.isBefore(newPeriod.startDate) && this.endDate.isAfter(newPeriod.startDate)) return true;
-        if(this.startDate.isBefore(newPeriod.endDate) && this.endDate.isAfter(newPeriod.endDate)) return true;
-        return false;
+        if(newPeriod.endDate.isBefore(this.startDate) || this.endDate.isBefore(newPeriod.startDate)){
+            return false;
+        }else {
+            return true;
+        }
     }
 }
