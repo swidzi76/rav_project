@@ -2,7 +2,7 @@ package pl.sda.rav;
 
 
 public class Order {
-    static int number = 0;
+    static int number = 1;
     private int id;
     private User customer;
     private Vehicles vehicle;
