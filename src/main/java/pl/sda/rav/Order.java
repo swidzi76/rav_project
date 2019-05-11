@@ -5,10 +5,10 @@ public class Order {
     static int number = 0;
     private int id;
     private User customer;
-    private vehicles vehicle;
+    private Vehicles vehicle;
     private Period period;
 
-    public Order(User customer, vehicles vehicle, Period period) {
+    public Order(User customer, Vehicles vehicle, Period period) {
         this.id = number++;
         this.customer = customer;
         this.vehicle = vehicle;
@@ -28,11 +28,11 @@ public class Order {
         this.customer = customer;
     }
 
-    public vehicles getVehicle() {
+    public Vehicles getVehicle() {
         return vehicle;
     }
 
-    public void setVehicle(vehicles vehicle) {
+    public void setVehicle(Vehicles vehicle) {
         this.vehicle = vehicle;
     }
 

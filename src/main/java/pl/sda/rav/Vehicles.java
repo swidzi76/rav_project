@@ -1,6 +1,6 @@
 package pl.sda.rav;
 
-public abstract class  vehicles {
+public abstract class Vehicles {
 
      private int vin;
      private String name;
@@ -15,7 +15,7 @@ public abstract class  vehicles {
         this.brand = brand;
     }
 
-    public vehicles(String brand) {
+    public Vehicles(String brand) {
         this.brand = brand;
     }
 
@@ -43,7 +43,7 @@ public abstract class  vehicles {
         YearOfProduction = yearOfProduction;
     }
 
-    public vehicles(int vin, String name, int yearOfProduction) {
+    public Vehicles(int vin, String name, int yearOfProduction) {
         this.vin = vin;
         this.name = name;
         this.YearOfProduction = yearOfProduction;
