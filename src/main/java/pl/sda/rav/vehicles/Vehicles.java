@@ -1,4 +1,4 @@
-package pl.sda.rav;
+package pl.sda.rav.vehicles;
 
 public abstract class Vehicles implements Comparable {
     private int vin;

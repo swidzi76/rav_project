@@ -1,4 +1,6 @@
-package pl.sda.rav;
+package pl.sda.rav.order;
+
+import pl.sda.rav.vehicles.Vehicles;
 
 import java.util.ArrayList;
 

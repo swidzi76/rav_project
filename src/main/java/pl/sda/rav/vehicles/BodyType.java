@@ -1,4 +1,4 @@
-package pl.sda.rav;
+package pl.sda.rav.vehicles;
 
 public enum BodyType {
     KOMBI,

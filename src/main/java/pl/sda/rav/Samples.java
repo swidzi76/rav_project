@@ -1,5 +1,10 @@
 package pl.sda.rav;
 
+import pl.sda.rav.user.User;
+import pl.sda.rav.order.Period;
+import pl.sda.rav.user.UserType;
+import pl.sda.rav.vehicles.Car;
+
 import java.time.LocalDate;
 
 public class Samples {

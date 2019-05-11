@@ -1,4 +1,6 @@
-package pl.sda.rav;
+package pl.sda.rav.vehicles;
+
+import pl.sda.rav.vehicles.Car;
 
 public class SamplesVehiculs {
 

@@ -1,9 +1,9 @@
-package pl.sda.rav;
+package pl.sda.rav.vehicles;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static pl.sda.rav.SamplesVehiculs.*;
+import static pl.sda.rav.vehicles.SamplesVehiculs.*;
 
 
 public abstract class VehiclesDao  {

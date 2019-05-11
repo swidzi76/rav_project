@@ -2,10 +2,8 @@ package pl.sda.rav;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-
-import java.time.LocalDate;
-
-import static org.junit.jupiter.api.Assertions.*;
+import pl.sda.rav.order.Order;
+import pl.sda.rav.order.OrdersDao;
 
 class OrdersDaoTest {
 

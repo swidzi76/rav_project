@@ -1,5 +1,8 @@
-package pl.sda.rav;
+package pl.sda.rav.order;
 
+
+import pl.sda.rav.user.User;
+import pl.sda.rav.vehicles.Vehicles;
 
 public class Order {
     static int number = 1;

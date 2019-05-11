@@ -1,4 +1,4 @@
-package pl.sda.rav;
+package pl.sda.rav.user;
 
 public class User {
     private String login;
