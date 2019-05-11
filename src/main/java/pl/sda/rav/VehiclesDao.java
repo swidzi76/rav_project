@@ -21,6 +21,7 @@ public abstract class VehiclesDao  {
      }
      public List<Vehicles> getVehicles(){
          List<Vehicles> list = new ArrayList<>(vehicles);
+         return list;
      }
 
 

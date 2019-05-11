@@ -48,4 +48,9 @@ public abstract class Vehicles implements Comparable {
     public void setYearOfProduction(int yearOfProduction) {
         YearOfProduction = yearOfProduction;
     }
+
+    @Override
+    public int compareTo(Object o) {
+        return 0;
+    }
 }
