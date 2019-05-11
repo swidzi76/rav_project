@@ -1,10 +1,23 @@
 package pl.sda.rav;
 
-public class vehicles {
+public abstract class  vehicles {
 
      private int vin;
      private String name;
+     private String brand;
      private int YearOfProduction;
+
+    public String getBrand() {
+        return brand;
+    }
+
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
+    public vehicles(String brand) {
+        this.brand = brand;
+    }
 
     public int getVin() {
         return vin;
