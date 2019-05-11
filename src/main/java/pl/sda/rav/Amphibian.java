@@ -6,15 +6,10 @@ public class Amphibian extends Vehicles {
     private int maxDistanceMiles;
     private int displacement;
 
-    public Amphibian(String brand, int maxSpeed, int maxDistanceMiles, int displacement) {
-        super(brand);
-        this.maxSpeed = maxSpeed;
-        this.maxDistanceMiles = maxDistanceMiles;
-        this.displacement = displacement;
-    }
 
-    public Amphibian(int vin, String name, int yearOfProduction, int maxSpeed, int maxDistanceMiles, int displacement) {
-        super(vin, name, yearOfProduction);
+
+    public Amphibian(int vin, String name, int yearOfProduction,String brand, int maxSpeed, int maxDistanceMiles, int displacement) {
+        super(vin, name, yearOfProduction,brand);
         this.maxSpeed = maxSpeed;
         this.maxDistanceMiles = maxDistanceMiles;
         this.displacement = displacement;
@@ -45,7 +40,7 @@ public class Amphibian extends Vehicles {
     }
 
 
-    public Amphibian(int vin, String name, int yearOfProduction) {
-        super(vin, name, yearOfProduction);
+    public Amphibian(int vin, String name, int yearOfProduction, String brand) {
+        super(vin, name, yearOfProduction, brand);
     }
 }

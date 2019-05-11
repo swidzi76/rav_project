@@ -1,11 +1,24 @@
 package pl.sda.rav;
 
-public abstract class Vehicles {
+public abstract class Vehicles implements Comparable {
+    private int vin;
 
-     private int vin;
-     private String name;
-     private String brand;
+    private String name;
+    private String brand;
      private int YearOfProduction;
+
+
+
+    public int getYearOfProduction() {
+        return YearOfProduction;
+    }
+
+    public Vehicles(int vin, String name, int yearOfProduction, String brand) {
+        this.vin = vin;
+        this.name = name;
+        this.YearOfProduction = yearOfProduction;
+        this.brand = brand;
+    }
 
     public String getBrand() {
         return brand;
@@ -32,18 +45,7 @@ public abstract class Vehicles {
         this.name = name;
     }
 
-    public int getYearOfProduction() {
-        return YearOfProduction;
-    }
-
     public void setYearOfProduction(int yearOfProduction) {
         YearOfProduction = yearOfProduction;
-    }
-
-    public Vehicles(int vin, String name, int yearOfProduction, String brand) {
-        this.vin = vin;
-        this.name = name;
-        this.YearOfProduction = yearOfProduction;
-        this.brand = brand;
     }
 }
