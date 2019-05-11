@@ -13,7 +13,7 @@ public class Samples {
     public static Car car_122 = new Car(122,"Opel", 2010,150);
     public static Car car_123 = new Car(123,"MaŁy fiat", 1988,80);
 
-    public static User user_KLIENT = new User("adam", "adam", UserType.KLIENT);
+    public static User user_KLIENT = new User("adamm", "adam", UserType.KLIENT);
     public static User user_ADMIN = new User("romek", "romek", UserType.ADMINITRATOR);
 
 
