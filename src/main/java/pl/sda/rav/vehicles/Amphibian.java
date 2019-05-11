@@ -7,9 +7,8 @@ public class Amphibian extends Vehicles {
     private int displacement;
 
 
-
-    public Amphibian(int vin, String name, int yearOfProduction,String brand, int maxSpeed, int maxDistanceMiles, int displacement) {
-        super(vin, name, yearOfProduction,brand);
+    public Amphibian(int vin, String name, int yearOfProduction, String brand, int maxSpeed, int maxDistanceMiles, int displacement) {
+        super(vin, name, yearOfProduction, brand);
         this.maxSpeed = maxSpeed;
         this.maxDistanceMiles = maxDistanceMiles;
         this.displacement = displacement;
