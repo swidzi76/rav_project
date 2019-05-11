@@ -15,9 +15,6 @@ public abstract class Vehicles {
         this.brand = brand;
     }
 
-    public Vehicles(String brand) {
-        this.brand = brand;
-    }
 
     public int getVin() {
         return vin;
@@ -43,9 +40,10 @@ public abstract class Vehicles {
         YearOfProduction = yearOfProduction;
     }
 
-    public Vehicles(int vin, String name, int yearOfProduction) {
+    public Vehicles(int vin, String name, int yearOfProduction, String brand) {
         this.vin = vin;
         this.name = name;
         this.YearOfProduction = yearOfProduction;
+        this.brand = brand;
     }
 }
